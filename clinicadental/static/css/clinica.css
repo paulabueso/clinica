@@ -84,6 +84,8 @@ div.navbar {
 }
 .contactaya img{
     max-width: 60px;
+    float:left;
+    margin: 11px;
 }
 
 .cita{
@@ -97,6 +99,8 @@ div.navbar {
 #citaya > h1, h2, h3, p{
         color:white;
 }
+.accordion{
+        display: inline-block}
 
 .citaform{
 
@@ -122,4 +126,5 @@ div.navbar {
 #mail{
     margin-top: 150px;
 }
+
 
