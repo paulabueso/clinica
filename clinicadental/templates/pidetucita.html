@@ -1,0 +1,57 @@
+{% extends "base_template.html" %}
+
+
+
+
+{% block head %}
+
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script>
+    $(function() {
+        $( "#id_date" ).datepicker();
+    });
+    </script>
+{% endblock head %}
+{% block content %}
+    <br/>
+    <br/>
+    <br/>
+
+
+<section class=" cita">
+
+   <div class="container">
+
+        <div class="row citaform">
+         <h1>Pide cita</h1>
+             <div class="span12" style="text-align:center; margin: 0 auto;">
+                <form id= "citaya" action="/datepickerview/" method="post">
+                    {% csrf_token %}
+
+                    <ul>
+                        <li><p>Nombre y Apellido</p>{{ form.name }}</li>
+                        <li><p>Numero de telefono</p>{{ form.phone }}</li>
+                        <li><p>Correo electronico</p>{{ form.email }}</li>
+                        <li><p>Dra:</p>{{ form.dr}}</li>
+                    </ul>
+                    <!--{{ form.date }} -->
+                    <p>Date: <input name='date' type="text" id="id_date"></p>
+                    <ul>
+                        <li><p>Hora cita</p>{{ form.time }}</li>
+                    </ul>
+                    <input type="submit" value="Reservar">
+                </form>
+
+         </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock content%}
+
+

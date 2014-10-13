@@ -1,0 +1,42 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block head %}
+    <title>LLERANDI&BEJAR_ VISITANOS</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;}
+      #map {
+        width: 500px;
+        height: 500px;
+        margin: 50px;
+      }
+    </style>
+    <script src="{% static "js/google-map.js" %}"></script>
+
+{% endblock head %}
+{% block content %}
+    <section class="visitanos">
+    <div class="direccion">
+        <header><h1>VISITANOS</h1></header>
+        <div id="logo_adress">
+            <h2><strong>Principe de Vergara 7</strong><br>28001<br>Madrid</h2>
+            <h2><strong>tel</strong>91 343 0499</h2>
+        </div>
+    </div>
+    <div id="map"></div>
+
+
+
+
+    </section>
+
+{% endblock content %}
+
+
+
+

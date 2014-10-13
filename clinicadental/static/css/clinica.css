@@ -1,0 +1,125 @@
+body{
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Century Gothic",CenturyGothic, AppleGothic, 'Lucida Sans',
+    'Lucida Sans Unicode', Verdana, sans-serif;
+    }
+h1{ font-size: 38px;
+    text-transform: uppercase;
+    color: rgb(194, 193, 193);
+}
+h2{
+    font-size: 13px;
+    left: 20px;
+    color: black;
+    text-transform: uppercase;}
+p{font-size: 15px;
+color: rgb(102, 102, 102);
+}
+.text{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";}
+
+#welcome {
+    background-image: url("../img/b&w.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    padding-top: 20em;
+    padding-bottom: 10em;
+ }
+
+div.navbar {
+    opacity: .8;}
+
+#intro >h1, h3, p{
+    color:black;
+}
+                                                                             /*}                                                                                                                         }*/
+.text{
+     position: relative;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+     -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+#about{
+    /*background-color: #d3b5c3;*/
+     background-image: url("../img/collage.png");
+    background-image: url("../img/logo/logo_rosa.png");
+    /*padding-bottom: 50px;*/
+
+}
+#about h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color:black;
+    text-decoration: none;
+
+    }
+#about p {
+    font-size: 13px;
+    margin: 0 20px 0 20px;}
+
+
+::selection {
+    background: #f19698;
+    color: #fff;
+    text-shadow: none;
+}
+.retrato{
+    background-color: #eee;
+}
+.retrato img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.contactaya{
+    background-color: #5ca19b;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contactaya img{
+    max-width: 60px;
+}
+
+.cita{
+    background-image: url("../img/clinica1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    padding-top: 20em;
+    padding-bottom: 10em;
+}
+
+#citaya > h1, h2, h3, p{
+        color:white;
+}
+
+.citaform{
+
+    text-align: left;
+    float: right;
+    width: 280px;
+    margin-top: 25px;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    background: rgb(2, 2, 2);
+    background: rgba(2, 2, 2, .5);
+    box-shadow: 1px 1px 5px #666;
+    -webkit-box-shadow: 1px 1px 5px #666;
+
+}
+.direccion{margin-left: 50px;
+            margin-top: 100px;
+}
+.visitanos{
+    background-image: url("../img/art/plano.jpg");
+}
+#mail{
+    margin-top: 150px;
+}
+

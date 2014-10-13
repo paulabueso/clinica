@@ -1,0 +1,133 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+    <section id="welcome">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="intro">
+                </div>
+                <div class="col-md-6 text">
+                    {#                    <div class="caption vertical-center text-center">#}
+
+                    <h1>Clínica Llerandi&Béjar</h1>
+
+                    <h2>¨ Queremos ver tu sonrisa¨ </h2>
+
+                    <p>La clínica dental Llerandi & Béjar nace con el objetivo de proporcionar tratamientos odontógicos
+                        de vanguardia,
+                        poniendo a disposición del paciente sus instalaciones del centro de Madrid.</p>
+
+                    <p>Disponemos de un espacio en el que profesionales altamente cualificados trabajan conjuntamente
+                        para brindar
+                        al paciente tratamientos integrados, contando con los últimos avances en tecnologías
+                        médicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacta">
+        <div class="container">
+            <div class="row contactaya">
+                <div class="col-sm-2 col-sm-offset-1">
+                    <a href="{% url 'pidetucita' %}"><img src="{% static "img/icons/calendar.png" %}"  alt=""/></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="{% url 'chat' %}"><img src="{% static "img/icons/chat.png" %}" alt=""/></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="{% url 'mail' %}"><img src="{% static "img/icons/mail.png" %}" alt=""/></a>
+                </div>
+                <div class="col-sm-2">
+
+
+                    <img src="{% static "img/icons/phone.png" %}"  alt=""/>
+                </div>
+                <div class="col-sm-2">
+                    <a href="{% url 'direccion' %}"><img src="{% static "img/icons/location.png" %}"  alt=""/></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-3   col-sm-offset-6 retrato">
+                    <div class="accordion" id="accordion1">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#collapseBejar"
+                                   data-parent="#accordion1">
+                                    <div><img src="{% static "img/bejar.png" %}" alt="" /></div>
+                                    <h4>Dra. Ana Béjar Frías</h4></a>
+                            </div>
+                            <div id="collapseBejar" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <h2>Licenciada en odontología por la Universidad Complutense de Madrid 2010</h2>
+                                    <ul>
+                                        <li>Máster Oficial en Ortodoncia Avanzada por la Universidad Europea de Madrid
+                                            2013
+                                        </li>
+                                        <li>Máster de Ortodoncia Lingual de Incógnito® por la Universidad Politécnica de
+                                            Cataluña 2014
+                                        </li>
+                                        <li>Certificado Invisalign® 2014</li>
+                                        <li>Ortodoncista y responsable del área de ortodoncia en Clínica Dental
+                                            Recoletos Cuatro 2012-2014
+                                        </li></ul>
+                            </div> </div>
+                </div></div></div>
+
+                <div class="col-sm-3  retrato">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
+                               href="#collapseLlerandi">
+                                <div><img src="{% static "img/llerandi.png" %}" alt="" /></div>
+                                <h4>Dra. María Llerandi</h4>
+                            </a>
+                        </div>
+                        <div id="collapseLlerandi" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <h2>Licenciada en odontología por la Universidad Europea de Madrid 2005</h2>
+
+                                <p style="color:gray">(reconocimiento al mejor expediente academico de los graduados en el curso
+                                    academico 2004/2005 por la UEM y primer premio nacional fin de Carrera de
+                                    educación universitaria de los estudios de odontología a nivel nacional otorgado
+                                    por el Ministerio de Educación y Ciencia)</p>
+                                <ul>
+                                    <li>Master Avanzado de Prótesis e Implantoprotesis por la Universidad Europea
+                                        de Madrid 2005-2008
+                                    </li>
+                                    <li>Cursos de formación continuada en estética dental a nivel nacional e
+                                        internacional.
+                                    </li>
+                                    <li>Responsable del area de prótesis de la Clínica Recoletos Cuatro de
+                                        Valladolid. 2006-2014
+                                    </li>
+                                    <li>Miembro de la sociedad española de prótesis SEPES</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</section>
+
+
+
+
+{% endblock content %}
+
+
+
+
