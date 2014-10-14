@@ -39,11 +39,12 @@ class MakeAppointment(models.Model):
 # chat
 class Messages(models.Model):
     message = models.TextField(max_length=300)
+    # Should these actually be ForeignKeys?
     patient = models.TextField(max_length=20)
     secretary = models.TextField(max_length=20)
 
     def __unicode__(self):
-        return self.message
+        return u"{}".format(self.message)
 
 
 # class Category(models.Model):
