@@ -42,6 +42,7 @@ def direccion(request):
 @csrf_exempt
 def chat(request, sender, receiver):
     if request.method == "POST":
+        # Should use full variable names for readability (i.e. sender_user and receiver_user)
         s = User.objects.get(pk=int(sender))
         r = User.objects.get(pk=int(receiver))
         message = Messages.objects.create(message=request.POST['message'], sender=s, receiver=r)
